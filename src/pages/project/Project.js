@@ -6,6 +6,7 @@ import { useDocument } from '../../hooks/useDocument'
 
 //component
 import ProjectSummary from './ProjectSummary'
+import ProjectComments from './ProjectComments'
 
 // Style
 import './Project.css'
@@ -24,6 +25,7 @@ export default function Project() {
     return (
         <div className='project-details'>
             <ProjectSummary project ={document} />
+            <ProjectComments project ={document}/>
         </div>
     )
 }
