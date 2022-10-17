@@ -12,7 +12,7 @@ import './Create.css'
 
 //default categories
 const categories = [
-  {value: 'develompent', label: 'Development'},
+  {value: 'development', label: 'Development'},
   {value: 'design', label: 'Design'},
   {value: 'sales', label: 'Sales'},
   {value: 'marketing', label: 'Marketing'}

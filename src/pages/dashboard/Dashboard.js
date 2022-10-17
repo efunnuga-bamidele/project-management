@@ -19,8 +19,8 @@ export default function Dashboard() {
         setCurrentFilter(newFilter)
         
     }
-
     const filteredProject = documents ? documents.filter((document) => {
+        
         switch (currentFilter){
             case 'all':
                 return true
@@ -32,12 +32,11 @@ export default function Dashboard() {
                    }
                 })
                 return assignedToMe
-            case 'develompent':
+            case 'development':
             case 'design':
             case 'sales':
             case 'marketing':
-                // console.log(document.category, currentFilter)
-                console.log(document.category === currentFilter)
+                console.log(document.category, currentFilter)
                 return document.category === currentFilter
             default:
                 return true
